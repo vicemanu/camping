@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="banner">
+        <div class="sombra"></div>
+        <h1>Viva uma Aventura</h1>
+        <p>A vida é uma só, então aproveite o que tem!</p>
+    </header>
+    <section>
+        <article>
+            <h2>Vá em busa de Aventuras!</h2>
+            <p>
+                As vezes é necessario buscar algo a mais em sua vida, não ficar parado só vendo o tempo passar, é necessario descobrir mais sobre você mesmo, descobrir mais sobre essa criação de Deus que é a terra, não podemos nos da o luxo de viver na monotonia, precisamos aprender mais, conhecer mais, ter novos hobbis, novas oportunidades, precisamos ter aventuras, precisamos de experiências.
+            </p>
+            <p>	
+                É por isso que estamos aqui, para aproveitar a vida uns com os outros, gerar valor na vida das pessoas a nossa volta, conhecer o mundo, acampar, fazer trilhas, pular de paraquedas, curtir a vida. E para curtir a vida precisamos sair da zona de conforto, falar com pessoas desconhecidas, sair sozinho, comer em lugares diferêntes, descobrir o mundo, tudo isso é necessario, tudo isso é ensencial em nossas vidas.
+            </p>
+            <img src="imagens/img2.jpg" alt="">
+            <h2>Não olhe para trás</h2>
+            <p>
+                Não se culpe pelo tempo perdido, eu sei que se você tivesse feito escolhas melhores você já teria chegado nos seus sonhos, mas mesmo assim, não deixe isso te derrubar, não olhe para trás querendo voltar, você ainda tem tempo de ser corajoso, você ainda tem tempo de investir nos seus objetivos, então não deixe isso de lado, não deixe seu sonho de lado.
+            </p>
+            <img src="imagens/bg1.jpg" alt="">
+            
+            <h2>O Agora</h2>
+            <p>
+                O melhor momento em sua vida, para fazer algo é o agora, não deixe para depois algo que você sonha, corra atrás daquilo que você almeja, foque, seja disciplinado, saibar escolher e dizer não para as coisas que te impedem de chegar lá, mas seja sabio, não atropele ninguem para alcançar aquilo que quer, se você tem filhos cuide deles, de seu melhor para eles, mas tambem de um jeito de realizar seus sonhos, peça ajuda a outras pessoas, ou vá sozinho, mas com garra e coragem, só você pode te levar onde você deseja.
+            </p>
+            <img src="imagens/img8.jpg" alt="">
+            <h2>Seja um Sonhador</h2>
+            <p>
+                A vida é muito curta, você tem pouco tempo, porque desperdiçar ele? faz o melhor que você tem com aquilo que tem, mas nunca deixe de sonhar, nunca deixe de querer mais, mas tambem seja satisfeito com aquilo que já tem, seja satisfeito com aquilo que você conquistou até hoje!
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Copyright © 2023 Feito por <a target="_blank" href="https://victor-mielke-portfolio.vercel.app/">Victor Mielke</a></p>
+    </footer>
+</body>
+<script>
+    
+    var slide = document.getElementById('banner')
+    var numb = 1
+
+    function mudaSlide() {
+        slide.style.background = `url(../imagens/bg${numb}.jpg) center center`
+        slide.style.backgroundSize = "cover"
+        numb++
+        if(numb > 4) {
+            numb = 1
+        }
+        setTimeout(mudaSlide, 5000)
+    }
+    
+    setTimeout(mudaSlide, 5000)
+
+    
+</script>
+</html>
